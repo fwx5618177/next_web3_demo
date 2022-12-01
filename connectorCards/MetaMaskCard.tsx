@@ -3,6 +3,7 @@ import { hooks, metaMask } from '../connectors/metaMask'
 import { Card } from '../components/Card'
 import { HStack, Box } from '@chakra-ui/react'
 import ConnectContract from '../components/ConnectContract'
+import AlchemyAPI from '../components/AlchemyAPI'
 
 const { useChainId, useAccounts, useIsActivating, useIsActive, useProvider, useENSNames } = hooks
 
@@ -43,6 +44,10 @@ export default function MetaMaskCard() {
 
     <Box borderWidth='1px' borderRadius='lg' shadow={'lg'} w='800px' h='300' p={10}>
       <ConnectContract />
+    </Box>
+
+    <Box borderWidth='1px' borderRadius='lg' shadow={'lg'} w='800px' h='500' p={10}>
+      <AlchemyAPI />
     </Box>
     </HStack>
   )

@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "connectors/alchemy.js", "connectors/alchemy.js"  ],
   "exclude": [
     "node_modules"
   ]
